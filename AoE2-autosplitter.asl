@@ -7,25 +7,25 @@ state("age2_x1", "aoc10c")
 {	
 	int starts : 0x283CC0;
 	int starts2 : 0x2B4E24;
-	double victory : 0x29572C;
+	int victory : 0x2B5878;
 }
 state("age2_x1_1.0c_1920x1080", "aoc10c")
 {
 	int starts : 0x283CC0;
 	int starts2 : 0x2B4E24;
-	double victory : 0x29572C;
+	int victory : 0x2B5878;
 }
 state("age2_x1_1.0c_1600x900", "aoc10c")
 {
 	int starts : 0x283CC0;
 	int starts2 : 0x2B4E24;
-	double victory : 0x29572C;
+	int victory : 0x2B5878;
 }
 state("age2_x1_1.0c_1366x768", "aoc10c")
 {
 	int starts : 0x283CC0;
 	int starts2 : 0x2B4E24;
-	double victory : 0x29572C;
+	int victory : 0x2B5878;
 }
 
 init
@@ -42,7 +42,7 @@ if (version == "aoehd" && old.startshd == 0 && current.startshd > 0) return true
 
 split
 {
-	if (old.victory == 0 && current.victory > 0) return true;
+	if (old.victory == 0 && current.victory == 1) return true;
 }
 
 reset
