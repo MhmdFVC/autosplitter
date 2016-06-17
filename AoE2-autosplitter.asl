@@ -42,7 +42,7 @@ if (version == "aoehd" && old.startshd == 0 && current.startshd > 0) return true
 
 split
 {
-	if (old.victory == 0 && current.victory == 1) return true;
+	if (old.victory == 0 && old.starts2 == 0 && current.victory == 1) return true;
 }
 
 reset
